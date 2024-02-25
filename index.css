@@ -1,10 +1,10 @@
 .calculator-body{
     width: 400px;
-    height: 400px;
+    height: 480px;
     background-color: rgb(33, 33, 33);
     margin: 30px auto;
     padding: 30px;
-   padding-top: 50px;
+   padding-top: 30px;
     border-radius:10px;
 
 }
@@ -18,41 +18,61 @@
     background-color: rgb(101, 243, 148);
     font-family: 'Digital Numbers Regular';
     margin: 0 auto;
+    margin-bottom:20px;
     display:block;
     text-align: right;
     src: local('Digital Numbers Regular'), url('DigitalNumbers-Regular.woff') format('woff');
 }
 .main{
     display: flex;
-    width:100%;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     flex-direction: row;
     text-align: center;
-    display: inline;
-    margin: 20px auto;
+    margin: 0px auto;
+ 
 }
 
 .buttons-container{
-    height: 250px;
+    height: 230px;
     display: flex;
     padding: 10px;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .button{
     font-size: 25px;
     text-align: center;
     width: 55px;
-    margin:8px;
+    margin : 8px 20px;
     border-radius:5px;
+    box-shadow: 0px 0px 5px white;
+}
+.button:hover{
+    width: 57px;
+    font-size: 27px;
+    box-shadow: 0px 0px 7px white;
+    transition: 0.1s;
 }
 
 .clear{
-    width: 26%;
+    width: 80px;
+    box-shadow: 0px 0px 5px white;
     text-align: center;
-    background-color: red ;
+    font-size: 22px;
+    color: white;
+    padding: 5px 0px;
+    background-color: rgb(62, 62, 62) ;
     margin-left: 20px;
+}
+
+.clear:hover{
+    width: 85px;
+    box-shadow: 0px 0px 7px white;
+    font-size: 24px;
+    transition: 0.1s;
 }
 
